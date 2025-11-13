@@ -6,8 +6,8 @@ import time
 
 led = Pin(2, Pin.OUT)
 
-ssid = 'LAVA LXX504'
-password = '00778100'
+ssid = 'user_name'
+password = 'wifi_password'
 
 
 wifi = network.WLAN(network.STA_IF)
@@ -75,3 +75,4 @@ while True:
     except OSError as e:
         print("Connection error:", e)
         conn.close()
+
