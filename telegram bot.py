@@ -3,11 +3,11 @@ import time
 import network
 import urequests
 
-ssid= "LAVA LXX504"
-pasd= "00778100"
+ssid= "user_name"
+pasd= "password"
 
-bot_token= "7548858775:AAHpbKqF6S8W5_g5fGfPMihJoCxjL0NOb_o"
-chat_id= "6045281845"
+bot_token= "bot_token"
+chat_id= "your_chatid"
 messg= "Alert! someone detected"
 
 led= machine.Pin(2, machine.Pin.OUT)
@@ -38,4 +38,5 @@ while True:
         print("motion")
         led.toggle()
         time.sleep(3)
+
     time.sleep_ms(200)
