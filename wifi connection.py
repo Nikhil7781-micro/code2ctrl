@@ -2,8 +2,8 @@ import machine
 import network
 import time
 
-wifi_name="LAVA LXX504"
-passw="00778100"
+wifi_name="your_wifi_name"
+passw="your_password"
  
 wlan= network.WLAN(network.STA_IF)
 wlan.active(True)
@@ -14,3 +14,4 @@ while not wlan.isconnected():
     time.sleep_ms(100)
     print("connected",wlan.ifconfig()[0])
     
+
